@@ -1,0 +1,16 @@
+/**
+ * @license
+ * Copyright 2016 Google Inc. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */(()=>{var N,E,v;const h=Symbol(),g=Symbol(),d=Symbol(),a=Symbol(),f=Symbol(),S=Symbol(),O=Symbol(),y=Symbol(),m=Symbol(),w=Symbol(),k=Symbol(),p=Symbol(),M=Symbol();class R{constructor(){this[N]=[],this[E]=[],this[v]=new Set}destructor(){this[m](this[d]);const t=this;t[h]=null,t[d]=null,t[g]=null}get top(){const t=this[h];return t[t.length-1]||null}push(t){!t||t===this.top||(this.remove(t),this[S](t),this[h].push(t))}remove(t){const s=this[h].indexOf(t);return s===-1?!1:(this[h].splice(s,1),s===this[h].length&&this[S](this.top),!0)}pop(){const t=this.top;return t&&this.remove(t),t}has(t){return this[h].indexOf(t)!==-1}[(N=h,E=d,v=g,S)](t){const s=this[g],e=this[d];if(!t){this[m](e),s.clear(),this[d]=[];return}const n=this[w](t);if(n[n.length-1].parentNode!==document.body)throw Error("Non-connected element cannot be a blocking element");this[d]=n;const l=this[k](t);if(!e.length){this[y](n,l,s);return}let i=e.length-1,o=n.length-1;for(;i>0&&o>0&&e[i]===n[o];)i--,o--;e[i]!==n[o]&&this[O](e[i],n[o]),i>0&&this[m](e.slice(0,i)),o>0&&this[y](n.slice(0,o),l,null)}[O](t,s){const e=t[a];this[p](t)&&!t.inert&&(t.inert=!0,e.add(t)),e.has(s)&&(s.inert=!1,e.delete(s)),s[f]=t[f],s[a]=e,t[f]=void 0,t[a]=void 0}[m](t){for(const s of t){s[f].disconnect(),s[f]=void 0;const n=s[a];for(const l of n)l.inert=!1;s[a]=void 0}}[y](t,s,e){for(const n of t){const l=n.parentNode,i=l.children,o=new Set;for(let _=0;_<i.length;_++){const u=i[_];u===n||!this[p](u)||s&&s.has(u)||(e&&u.inert?e.add(u):(u.inert=!0,o.add(u)))}n[a]=o;const b=new MutationObserver(this[M].bind(this));n[f]=b;let c=l;const r=c;r.__shady&&r.host&&(c=r.host),b.observe(c,{childList:!0})}}[M](t){const s=this[d],e=this[g];for(const n of t){const l=n.target.host||n.target,i=l===document.body?s.length:s.indexOf(l),o=s[i-1],b=o[a];for(let c=0;c<n.removedNodes.length;c++){const r=n.removedNodes[c];if(r===o){console.info("Detected removal of the top Blocking Element."),this.pop();return}b.has(r)&&(r.inert=!1,b.delete(r))}for(let c=0;c<n.addedNodes.length;c++){const r=n.addedNodes[c];!this[p](r)||(e&&r.inert?e.add(r):(r.inert=!0,b.add(r)))}}}[p](t){return/^(style|template|script)$/.test(t.localName)===!1}[w](t){const s=[];let e=t;for(;e&&e!==document.body;){if(e.nodeType===Node.ELEMENT_NODE&&s.push(e),e.assignedSlot){for(;e=e.assignedSlot;)s.push(e);e=s.pop();continue}e=e.parentNode||e.host}return s}[k](t){const s=t.shadowRoot;if(!s)return null;const e=new Set;let n,l,i;const o=s.querySelectorAll("slot");if(o.length&&o[0].assignedNodes)for(n=0;n<o.length;n++)for(i=o[n].assignedNodes({flatten:!0}),l=0;l<i.length;l++)i[l].nodeType===Node.ELEMENT_NODE&&e.add(i[l]);return e}}document.$blockingElements=new R})();
