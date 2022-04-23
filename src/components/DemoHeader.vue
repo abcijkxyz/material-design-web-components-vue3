@@ -1,6 +1,6 @@
 <template>
   <mwc-top-app-bar-fixed>
-    <a href="../" slot="navigationIcon">
+    <a href="./" slot="navigationIcon">
       <mwc-icon-button class="white" icon="arrow_back"></mwc-icon-button>
     </a>
     <span slot="title">{{ component }}</span>

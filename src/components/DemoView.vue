@@ -1,11 +1,11 @@
 <template>
   <header>
     <span class="demo-catalog-logo">
-      <img alt="Generic component icon" src="/static/images/ic_component_24px_white.svg" />
+      <img alt="Generic component icon" src="../../public/static/images/ic_component_24px_white.svg" />
     </span>
     <span class="demo-heading">Material Web Components Catalog</span>
     <span class="demo-heading">
-      <a href="'https://github.com/material-components/material-components-web-components" target="_blank">
+      <a href="https://github.com/web4network/material-design-web-components-vue3" target="_blank">
         <mwc-button outlined label="View Github Source" class="white"></mwc-button>
       </a>
     </span>
@@ -46,151 +46,151 @@ const listItems = [
     name: 'Elevation Overlay',
     secondary: 'Element overlays for dark mode elevation and emphasis',
     href: 'elevation-overlay/',
-    img: '/static/images/flip_to_front_24px.svg',
+    img: './static/images/flip_to_front_24px.svg',
   },
   {
     name: 'Button',
     secondary: 'Raised and flat buttons',
     href: 'button/',
-    img: '/static/images/ic_button_24px.svg',
+    img: './static/images/ic_button_24px.svg',
   },
   {
     name: 'Floating action button',
     secondary: 'The primary action in an application',
     href: 'fab/',
-    img: '/static/images/ic_button_24px.svg',
+    img: './static/images/ic_button_24px.svg',
   },
   {
     name: 'Checkbox',
     secondary: 'Multi-selection controls',
     href: 'checkbox/',
-    img: '/static/images/ic_selection_control_24px.svg',
+    img: './static/images/ic_selection_control_24px.svg',
   },
   {
     name: 'Circular Progress',
     secondary: 'Fills from 0-100%, represented by an arc.',
     href: 'circular-progress/',
-    img: '/static/images/ic_progress_activity.svg',
+    img: './static/images/ic_progress_activity.svg',
   },
   {
     name: 'Drawer',
     secondary: 'Navigation to provide access to destinations.',
     href: 'drawer/',
-    img: '/static/images/ic_component_24px.svg',
+    img: './static/images/ic_component_24px.svg',
   },
   {
     name: 'Dialog',
     secondary: 'Popup that gains user attention.',
     href: 'dialog/',
-    img: '/static/images/ic_dialog_24px.svg',
+    img: './static/images/ic_dialog_24px.svg',
   },
   {
     name: 'Formfield',
     secondary: 'Layout form fields with labels',
     href: 'formfield/',
-    img: '/static/images/ic_text_field_24px.svg',
+    img: './static/images/ic_text_field_24px.svg',
   },
   {
     name: 'Icon',
     secondary: 'Material design icons',
     href: 'icon/',
-    img: '/static/images/ic_component_24px.svg',
+    img: './static/images/ic_component_24px.svg',
   },
   {
     name: 'Icon Button',
     secondary: 'Icon buttons allow users to take actions, and make choices, with a single tap.',
     href: 'icon-button/',
-    img: '/static/images/ic_component_24px.svg',
+    img: './static/images/ic_component_24px.svg',
   },
   {
     name: 'Icon Button Toggle',
     secondary: 'Toggling icon states',
     href: 'icon-button-toggle/',
-    img: '/static/images/ic_component_24px.svg',
+    img: './static/images/ic_component_24px.svg',
   },
   {
     name: 'Linear Progress',
     secondary: 'Fills from 0% to 100%, represented by bars',
     href: 'linear-progress/',
-    img: '/static/images/ic_progress_activity.svg',
+    img: './static/images/ic_progress_activity.svg',
   },
   {
     name: 'List',
     secondary: 'Continuous, vertical indexes of text or images.',
     href: 'list/',
-    img: '/static/images/view_list_24px.svg',
+    img: './static/images/view_list_24px.svg',
   },
   {
     name: 'Menu',
     secondary: 'Displays a list of choices on a temporary surface.',
     href: 'menu/',
-    img: '/static/images/picture_in_picture_24px.svg',
+    img: './static/images/picture_in_picture_24px.svg',
   },
   {
     name: 'Radio buttons',
     secondary: 'Single selection controls',
     href: 'radio/',
-    img: '/static/images/ic_radio_button_24px.svg',
+    img: './static/images/ic_radio_button_24px.svg',
   },
   {
     name: 'Ripple',
     secondary: 'Touch ripple',
     href: 'ripple/',
-    img: '/static/images/ic_ripple_24px.svg',
+    img: './static/images/ic_ripple_24px.svg',
   },
   {
     name: 'Select',
     secondary: 'Single option dropdown select menus',
     href: 'select/',
-    img: '/static/images/list_alt_24px.svg',
+    img: './static/images/list_alt_24px.svg',
   },
   {
     name: 'Slider',
     secondary: 'Range controls',
     href: 'slider/',
-    img: '/static/images/slider_24px.svg',
+    img: './static/images/slider_24px.svg',
   },
   {
     name: 'Snackbar',
     secondary: 'Transient messages',
     href: 'snackbar/',
-    img: '/static/images/ic_toast_24px.svg',
+    img: './static/images/ic_toast_24px.svg',
   },
   {
     name: 'Switch',
     secondary: 'On off controls',
     href: 'switch/',
-    img: '/static/images/ic_switch_24px.svg',
+    img: './static/images/ic_switch_24px.svg',
   },
   {
     name: 'Tabs',
     secondary: 'Tabs with support for icon and text labels',
     href: 'tabs/',
-    img: '/static/images/ic_tabs_24px.svg',
+    img: './static/images/ic_tabs_24px.svg',
   },
   {
     name: 'Textfield',
     secondary: 'Single line text input',
     href: 'textfield/',
-    img: '/static/images/ic_text_field_24px.svg',
+    img: './static/images/ic_text_field_24px.svg',
   },
   {
     name: 'Textarea',
     secondary: 'Multiline text input',
     href: 'textarea/',
-    img: '/static/images/ic_text_field_24px.svg',
+    img: './static/images/ic_text_field_24px.svg',
   },
   {
     name: 'Top App Bar',
     secondary: 'Container for items such as application title, navigation icon, and action items.',
     href: 'top-app-bar/',
-    img: '/static/images/ic_toolbar_24px.svg',
+    img: './static/images/ic_toolbar_24px.svg',
   },
   {
     name: 'Top App Bar Fixed',
     secondary: 'Container for items such as application title, navigation icon, and action items.',
     href: 'top-app-bar-fixed/',
-    img: '/static/images/ic_toolbar_24px.svg',
+    img: './static/images/ic_toolbar_24px.svg',
   },
 ].sort(sortFn)
 
