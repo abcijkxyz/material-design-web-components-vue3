@@ -42,7 +42,7 @@ export default defineConfig({
             // console.log(path)
             if (path[0] == '@material' && path[1].includes('mwc-')) {
               // 根据实际情况分析，文件大小如果控制在 300kb 以下,需要拆分为 3 个文件，
-              return path[0] + '-' + (path[1].length % 3)
+              return path[0] + '-mwc' // + (path[1].length % 3)
             } else {
               return path[0]
             }

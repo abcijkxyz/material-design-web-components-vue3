@@ -5,7 +5,7 @@
     </span>
     <span class="demo-heading">Material Web Components Catalog</span>
     <span class="demo-heading">
-      <a href="https://github.com/web4network/material-design-web-components-vue3" target="_blank">
+      <a href="https://github.com/abcijkxyz/material-design-web-components-vue3" target="_blank">
         <mwc-button outlined label="View Github Source" class="white"></mwc-button>
       </a>
     </span>

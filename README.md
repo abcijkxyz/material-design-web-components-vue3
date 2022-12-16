@@ -2,9 +2,8 @@
 
 ## 技术栈
 
-* Vue 3 + Vite
+* Vite + JavaScript + Vue 3
 * Material Design Web Components
-* JavaScript
 * Tauri （替代 Electron ）
 
 ### 相关截图
@@ -29,7 +28,7 @@ https://material-components.github.io/material-web
 
 https://github.com/material-components/material-web/tree/master/demos
 
-将 Material Design Web Components 的 demos 改写为使用 Vue 3 + Vite ，可以支持使用 Tauri 打包为桌面端程序
+将 Material Design Web Components 的 demos 改写为使用 Vite + JavaScript + Vue 3 ，可以支持使用 Tauri 打包为桌面端程序
 
 ### 相关命令
 
@@ -44,6 +43,7 @@ https://github.com/material-components/material-web/tree/master/demos
 
 ```shell
 yarn build
+yarn preview
 ```
 
 * 初始化Tauri配置
